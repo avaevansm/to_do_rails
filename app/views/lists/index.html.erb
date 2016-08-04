@@ -1,0 +1,9 @@
+<h1>Welcome-to-Lists </h1>
+<p>This is where you'll find a list of your assigned to-do lists.</p>
+
+<% @lists.each do |list|  %>
+<%= list.name %>
+<% end %>
+
+
+<%= link_to "make a list", new_list_path %>
